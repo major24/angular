@@ -1,0 +1,30 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<div style="text-align:center">
+  <h1>
+    {{ title }}!
+  </h1>
+</div>
+<app-header
+  [headerMeassage]="headerMeassage">
+  My Comp From Lib
+</app-header>
+
+<hr />
+<div>Address Comp load from my packaged library</div>
+<hr />
+
+<app-address-display
+  [header]="header"
+  [addressType]="addressType"
+  [address]="address">
+</app-address-display>
+
+<hr /><hr />
+<div>show DYNAMIC address  child comp</div>
+<hr />
+
+<app-address-display-dynamic
+  [servicingCountry]="servicingCountry"
+  [addressHeader]="addressHeader"
+  [address]="address">
+</app-address-display-dynamic>

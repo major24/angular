@@ -1,0 +1,17 @@
+<p>
+  alert-button works!
+</p>
+<p>
+  <button (click)="toggle()">Toggle MSG</button>
+  <button (click)="getMsgWithDelay()">Get Msg with Delay</button>
+  <button (click)="clearMsg()">Clear Msg</button>
+  <button (click)="getTimeWithObservable()">Get Time (Observable)</button>
+  <button (click)="stopObservable()">Stop Timer (Observable)</button>
+</p>
+
+<div *ngIf="!hideContent" 
+      id="alert-message">Msg: {{content}}
+</div>
+<div>
+  <p>Time: {{time}}
+</div>

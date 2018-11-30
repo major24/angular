@@ -1,0 +1,29 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<div style="text-align:center">
+  <h1>
+    Welcome to {{ title }}!
+  </h1>
+  <!--  https://medium.com/@nikolasleblanc/building-an-angular-4-component-library-with-the-angular-cli-and-ng-packagr-53b2ade0701e -->
+</div>
+<app-header
+    [headerMeassage]="headerMeassage">
+</app-header>
+
+<div>show address child comp</div>
+<hr />
+
+<app-address-display
+  [header]="header"
+  [addressType]="addressType"
+  [address]="address">
+</app-address-display>
+
+<hr /><hr />
+<div>show DYNAMIC address  child comp</div>
+<hr />
+
+<app-address-display-dynamic
+  [servicingCountry]="servicingCountry"
+  [addressHeader]="addressHeader"
+  [address]="address">
+</app-address-display-dynamic>

@@ -1,0 +1,17 @@
+.addr-element {
+    padding: 6px;
+    border: 1px solid brown;
+    width:80%;
+}
+
+.addr-label {
+    color: blue;
+    font-weight: bold;
+    width: 50%;
+}
+
+.addr-value {
+    color: blueviolet;
+    font-weight: bold;
+    width: 50%;
+}

@@ -1,0 +1,43 @@
+<div class="container">
+    <h3>Address Form</h3>
+    <form (ngSubmit)="onSubmit(addressUpdateForm.value)" 
+        #addressUpdateForm="ngForm">
+      <div class="form-group">
+        <label for="name">UserID</label>
+        <input type="text" class="form-control" 
+        id="userid" name="userid" required
+         [(ngModel)]="userid">
+      </div>
+
+      <div class="form-group">
+        <label for="street">Street</label>
+        <input type="text" class="form-control" 
+          id="street" name="street" 
+          [(ngModel)]="selectedAddress.street">
+      </div>
+
+      <div class="form-group">
+        <label for="city">City</label>
+        <input type="text" class="form-control" 
+        id="city" name="city"
+         [(ngModel)]="selectedAddress.city">
+      </div>
+
+      <div class="form-group">
+        <label for="postcode">PostCode</label>
+        <input type="text" class="form-control" 
+        id="postcode" name="postcode"
+         [(ngModel)]="selectedAddress.postcode">
+      </div>
+
+      <div class="form-group">
+        <label for="province">Province</label>
+        <input type="text" class="form-control" 
+        id="province" name="province"
+         [(ngModel)]="selectedAddress.province">
+      </div>
+
+      <button type="submit" class="btn btn-success">Submit</button>
+    </form>
+</div>
+

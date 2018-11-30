@@ -1,0 +1,20 @@
+<div>
+  team works! Team List:
+</div>
+<div>
+  <li *ngFor="let team of teams$ | async">
+      {{team.id}} - {{team.name}}
+  </li>
+</div>
+<div>
+  <p>Test search by id</p>
+  <button (click)="search(300)">ID=300</button>
+  <button (click)="search(999)">ID=999-service throws error</button>
+  <button (click)="searchReturn404(-1)">ID=-1 return api 404 error</button>
+  <div *ngIf="team$ as team">
+      {{team.name}}
+  </div>
+  <div>
+    Error: {{error}}
+  </div>
+</div>

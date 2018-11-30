@@ -1,0 +1,12 @@
+// Place your settings in this file to overwrite the default settings
+{
+     "files.exclude": {
+    "**/.git": true,
+    "**/.svn": true,
+    "**/.hg": true,
+    "**/CVS": true,
+    "**/.DS_Store": true,
+    "**/*.js": { "when": "$(basename).ts"},
+    "**/*.js.map": true
+  }
+}  // Configure glob patterns for excluding files and folders.

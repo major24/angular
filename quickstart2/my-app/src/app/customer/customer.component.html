@@ -1,0 +1,13 @@
+<p>
+  CUSTOMER must be logged in to see address!!
+</p>
+<div>Logged in id: {{userid}}</div>
+<div>
+  <a routerLink="/address-detail-update">Update Address Detail</a>
+</div>
+<p></p>
+<div>Address componet - shared by customer and user objs)</div>
+<div>
+  <app-address-detail 
+      [address]="selectedAddress"></app-address-detail>
+</div>
